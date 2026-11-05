@@ -15,7 +15,7 @@ const burger = document.getElementById('burger');
   const TOTAL = 192;          // frame-0001 … frame-0192
   const STEP  = 1;            // 2 = every 2nd frame (lighter download)
   const PATH  = 'frames/frame-';
-  const EXT   = 'png';        // 'webp' if you convert
+  const EXT   = 'webp';        // 'webp' if you convert
   const CROP_Y = 56, CROP_H = 606;   // removes black bars + "Veo" mark
   const SCROLL_SCREENS = 3;   // scroll length (in screen heights) to play the whole animation
   const SMOOTH = 0.18;        // 1 = instant, lower = softer
