@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sri Kannan Graphics – From Flat to Form</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Noto+Sans+Tamil:wght@500;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- distressed-ink filter for the headline -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <filter id="rough" x="-5%" y="-5%" width="110%" height="110%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="4" result="n"/>
+    <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -5 4.2" result="m"/>
+    <feComposite in="SourceGraphic" in2="m" operator="in"/>
+  </filter>
+</svg>
+<div class="scroll-track" id="track">
+<section class="hero">
+
+  <!-- NAV -->
+  <nav class="nav">
+    <a class="logo" href="#"><b>SKG</b><span>Sri Kannan<br>Graphics</span></a>
+    <div class="links" id="links">
+      <a class="on" href="#">Home</a><a href="#">Products</a><a href="#">Gallery</a><a href="#about">About Us</a><a href="#">Contact</a>
+    </div>
+    <a class="enquire" href="#">Enquire <span>→</span></a>
+    <button class="burger" id="burger" aria-label="Menu" aria-expanded="false">☰</button>
+  </nav>
+
+  <div class="eyebrow"><em>//</em> Sivakasi <b>•</b> Print &amp; Packaging since 1995</div>
+
+  <h1>
+    <span class="a">From Flat</span>
+    <span class="b">to Form.
+      <svg class="brush" viewBox="0 0 400 30" preserveAspectRatio="none"><path d="M3 24 C90 14 220 8 397 6" stroke="#d7e62a" stroke-width="10" fill="none" stroke-linecap="round"/></svg>
+    </span>
+  </h1>
+
+  <p class="tagline">Thoughtfully printed and expertly crafted packaging that turns your product into an experience.</p>
+  <a class="btn" href="#">Explore Products <span>→</span></a>
+
+    <!-- PACKAGING ANIMATION -->
+    <div class="media">
+    <canvas id="frames" width="1280" height="606"
+            role="img" aria-label="Die-line folding into a finished maroon printed box"></canvas>
+    </div>
+
+  <!-- ANNOTATIONS (coordinates match a 1410×793 canvas) -->
+  <svg class="overlay" viewBox="0 0 1410 793" preserveAspectRatio="none" fill="none" stroke="#1c1c1c" stroke-width="1.2">
+    <!-- top-right crosshair + tagline slash -->
+    <circle cx="948" cy="158" r="13"/><path d="M948 140V176M930 158H966"/>
+    <path d="M1003 245L1030 172" stroke="#d4131b" stroke-width="2.2"/>
+    <!-- colour swatches + small crosshair -->
+    <!-- <g stroke="none"><rect x="461" y="643" width="17" height="16" fill="#2a2a2a"/><rect x="480" y="643" width="17" height="16" fill="#e8407a"/><rect x="499" y="643" width="19" height="16" fill="#d7e62a"/></g>
+    <circle cx="545" cy="651" r="9"/><path d="M545 638V664M532 651H558"/> -->
+    <!-- corner marks -->
+    <path d="M1392 20H1410M1401 11V29M1392 712H1410M1401 703V721"/>
+  </svg>
+  <!-- <p class="tag" style="left:18vw;top:46.2vw">Die-line<br>(Unfolded)</p>
+  <p class="tag" style="left:57.3vw;top:45.5vw">Printed board<br>(Ready to form)</p>
+  <p class="tag" style="left:91.9vw;top:44.8vw">Finished<br>packaging</p> -->
+
+  <!-- DESIGN — PRINT — FORM -->
+  <div class="process">
+    <div class="step">
+      <svg viewBox="0 0 24 24"><path d="M4 20l1-4L16 5l3 3L8 19z"/><path d="M14 7l3 3"/></svg>Design
+    </div>
+    <div class="line"></div>
+    <div class="step">
+      <svg viewBox="0 0 24 24"><path d="M7 9V4h10v5"/><rect x="4" y="9" width="16" height="8" rx="1"/><path d="M7 14h10v6H7z"/></svg>Print
+    </div>
+    <div class="line"></div>
+    <div class="step">
+      <svg viewBox="0 0 24 24"><path d="M12 3l8 4v10l-8 4-8-4V7z"/><path d="M4 7l8 4 8-4M12 11v10"/></svg>Form
+    </div>
+  </div>
+
+</section>
+</div>
+
+<!-- ===== PRODUCT RANGE ===== -->
+<section class="range" id="products">
+
+  <div class="range-head" data-reveal>
+    <p class="range-eyebrow"><em>//</em> Our Product Range</p>
+    <h2 class="reg" data-text="Packaging that earns its place.">Packaging that earns its place.</h2>
+    <p class="range-intro">A focused range of print and packaging solutions for food, retail, gifting and brand needs.</p>
+  </div>
+
+  <div class="range-grid">
+
+    <a class="card c-food" href="#" data-reveal style="--d:0s">
+      <div class="pic"><img src="asset/p1.png" alt="Printed food cartons"></div>
+      <div class="info">
+        <h3>Food Cartons <span>→</span></h3>
+        <p>Hygienic, sturdy and brand-ready food packaging.</p>
+      </div>
+      <i class="flap"><b>SKG</b></i>
+    </a>
+
+    <a class="card c-rigid" href="#" data-reveal style="--d:.18s">
+      <div class="pic"><img src="asset/p2.png" alt="Rigid gift boxes"></div>
+      <div class="info">
+        <h3>Rigid Boxes <span>→</span></h3>
+        <p>Premium, durable boxes for gifting and retail.</p>
+      </div>
+      <i class="flap"><b>SKG</b></i>
+    </a>
+
+    <a class="card c-bags" href="#" data-reveal style="--d:.36s">
+      <div class="pic"><img src="asset/p3.png" alt="Custom printed paper bags"></div>
+      <div class="info">
+        <h3>Paper Bags <span>→</span></h3>
+        <p>Strong, neat and custom-printed paper bags.</p>
+      </div>
+      <i class="flap"><b>SKG</b></i>
+    </a>
+
+    <a class="card c-labels" href="#" data-reveal style="--d:.54s">
+      <div class="pic"><img src="asset/p4.png" alt="Printed labels on rolls"></div>
+      <div class="info">
+        <h3>Labels &amp; Print <span>→</span></h3>
+        <p>High-quality labels and printed materials to complete your pack.</p>
+      </div>
+      <i class="flap"><b>SKG</b></i>
+    </a>
+
+  </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section class="about" id="about">
+
+  <!-- registration marks -->
+  <i class="mk tl"></i><i class="mk rg tc"></i><i class="mk tr"></i>
+  <i class="mk bl"></i><i class="mk rg bc"></i><i class="mk br"></i>
+
+  <div class="ab-wrap">
+
+    <figure class="ab-photo" data-reveal>
+      <img src="asset/about.png" alt="Printing press at the Sri Kannan Graphics unit in Sivakasi">
+    </figure>
+
+    <div class="ab-copy" data-reveal>
+      <p class="ab-eyebrow"><i></i>About Us</p>
+
+      <h2 class="reg" data-text="Made in Sivakasi, since 1995.">Made in Sivakasi, since 1995.</h2>
+
+      <span class="ab-rule"></span>
+
+      <p class="ab-text">
+        Sri Kannan Graphics is a Sivakasi-based printing and packaging business.
+        Since 1995, we have made cartons, boxes, paper bags and printed materials for businesses.
+      </p>
+
+      <div class="ab-facts">
+        <div class="f" style="--d:.5s"><b>Since 1995</b><u></u></div>
+        <div class="f" style="--d:.65s"><b>Sivakasi,<br>Tamil Nadu</b></div>
+        <div class="f" style="--d:.8s"><b>Print &amp;<br>Packaging</b></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== GALLERY ===== -->
+<section class="gallery" id="gallery">
+
+  <div class="range-head" data-reveal>
+    <p class="range-eyebrow"><em>//</em> Gallery</p>
+    <h2 class="reg" data-text="Fresh off the press.">Fresh off the press.</h2>
+    <p class="range-intro">A look at the cartons, boxes, bags and labels we print and form in Sivakasi.</p>
+  </div>
+
+  <div class="filters" role="tablist" aria-label="Filter gallery">
+    <button class="flt on" data-f="all">All</button>
+    <button class="flt" data-f="food">Food Cartons</button>
+    <button class="flt" data-f="rigid">Rigid Boxes</button>
+    <button class="flt" data-f="bags">Paper Bags</button>
+    <button class="flt" data-f="labels">Labels &amp; Print</button>
+  </div>
+
+  <div class="g-grid">
+    <button class="gi w2 h2" data-cat="food"   data-title="Food Cartons"   data-reveal style="--d:0s">
+      <img src="asset/gallery/g1.jpg" alt="Printed food carton" loading="lazy"><span class="cap"><small>01</small><b>Food Cartons</b></span></button>
+    <button class="gi"       data-cat="rigid"  data-title="Rigid Boxes"    data-reveal style="--d:.1s">
+      <img src="asset/gallery/g2.jpg" alt="Rigid gift box" loading="lazy"><span class="cap"><small>02</small><b>Rigid Boxes</b></span></button>
+    <button class="gi h2"    data-cat="bags"   data-title="Paper Bags"     data-reveal style="--d:.2s">
+      <img src="asset/gallery/g3.jpg" alt="Custom printed paper bag" loading="lazy"><span class="cap"><small>03</small><b>Paper Bags</b></span></button>
+    <button class="gi"       data-cat="labels" data-title="Labels &amp; Print" data-reveal style="--d:.3s">
+      <img src="asset/gallery/g4.jpg" alt="Printed labels" loading="lazy"><span class="cap"><small>04</small><b>Labels &amp; Print</b></span></button>
+
+    <button class="gi w2"    data-cat="food"   data-title="Food Cartons"   data-reveal style="--d:.1s">
+      <img src="asset/gallery/g5.jpg" alt="Food packaging" loading="lazy"><span class="cap"><small>05</small><b>Food Cartons</b></span></button>
+    <button class="gi h2"    data-cat="rigid"  data-title="Rigid Boxes"    data-reveal style="--d:.2s">
+      <img src="asset/gallery/g6.jpg" alt="Premium rigid boxes" loading="lazy"><span class="cap"><small>06</small><b>Rigid Boxes</b></span></button>
+    <button class="gi"       data-cat="bags"   data-title="Paper Bags"     data-reveal style="--d:.3s">
+      <img src="asset/gallery/g7.jpg" alt="Carry bags" loading="lazy"><span class="cap"><small>07</small><b>Paper Bags</b></span></button>
+    <button class="gi"       data-cat="labels" data-title="Labels &amp; Print" data-reveal style="--d:.4s">
+      <img src="asset/gallery/g8.jpg" alt="Label rolls" loading="lazy"><span class="cap"><small>08</small><b>Labels &amp; Print</b></span></button>
+    <button class="gi w2"    data-cat="food"   data-title="Food Cartons"   data-reveal style="--d:.2s">
+      <img src="asset/gallery/g9.jpg" alt="Printed carton range" loading="lazy"><span class="cap"><small>09</small><b>Food Cartons</b></span></button>
+  </div>
+</section>
+
+<!-- lightbox -->
+<div class="lb" id="lb" aria-hidden="true" role="dialog" aria-label="Gallery viewer">
+  <button class="lb-x" aria-label="Close">✕</button>
+  <button class="lb-n prev" aria-label="Previous">←</button>
+  <figure>
+    <img alt="">
+    <figcaption class="lb-cap"></figcaption>
+  </figure>
+  <button class="lb-n next" aria-label="Next">→</button>
+</div>
+
+<!-- ===== FOOTER ===== -->
+<footer class="foot" id="contact">
+
+  <div class="foot-cta" data-reveal>
+    <p class="foot-eyebrow"><em>//</em> Let's talk</p>
+    <h2>
+      <span class="ln"><span>Got a pack in mind?</span></span>
+      <span class="ln"><span class="hl">Let's fold it into form.</span></span>
+    </h2>
+    <div class="foot-btns">
+      <a class="fb1" href="tel:+919443327066">Call 94433 27066 <span>→</span></a>
+      <a class="fb2" href="https://wa.me/919443327066" target="_blank" rel="noopener">WhatsApp us</a>
+      <a class="fb3" href="mailto:srikannangraphics@gmail.com">Email</a>
+    </div>
+  </div>
+
+  <div class="foot-grid">
+
+    <div class="fcol brand">
+      <a class="logo" href="#"><b>SKG</b><span>Sri Kannan<br>Graphics</span></a>
+      <p>Anything &amp; Everything in Printing.<br>Print &amp; packaging, Sivakasi, since 1995.</p>
+    </div>
+
+    <nav class="fcol" aria-label="Explore">
+      <h3>Explore</h3>
+      <a href="#">Home</a>
+      <a href="#products">Products</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#about">About Us</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="fcol">
+      <h3>What we make</h3>
+      <a href="#products">Food Cartons</a>
+      <a href="#products">Rigid Boxes</a>
+      <a href="#products">Paper Bags</a>
+      <a href="#products">Labels &amp; Print</a>
+      <a href="#products">Textile Shade Books</a>
+    </div>
+
+    <div class="fcol visit">
+      <h3>Visit us</h3>
+      <address>
+        1C/5, (236), Near Jeyagraham Offset Printers,<br>
+        SFR College, Via Thiruthangal Road,<br>
+        Sivakasi – 626123.
+      </address>
+      <p>
+        <a href="tel:+919443327066">94433 27066</a> · <a href="tel:+919385461324">93854 61324</a><br>
+        <a href="tel:+919952260563">99522 60563</a> · <a href="tel:+919994170887">99941 70887</a><br>
+        <a href="tel:+914562227066">04562 227066</a>
+      </p>
+      <p>
+        <a href="mailto:srikannangraphics@gmail.com">srikannangraphics@gmail.com</a><br>
+        <a href="mailto:srikannangraphics@yahoo.com">srikannangraphics@yahoo.com</a>
+      </p>
+      <a class="dir" href="https://www.google.com/maps/search/?api=1&query=Sri+Kannan+Graphics+Sivakasi" target="_blank" rel="noopener">Get directions →</a>
+    </div>
+
+  </div>
+
+  <div class="foot-word" aria-hidden="true" data-reveal>
+    <span data-text="Sri Kannan">Sri Kannan</span>
+    <span data-text="Graphics">Graphics</span>
+  </div>
+
+  <div class="foot-bar">
+    <p>© <span id="yr">2026</span> Sri Kannan Graphics. All rights reserved.</p>
+    <p class="pl">Save Tree! • Save Wild! • Save Nature!</p>
+    <button class="totop" id="totop" aria-label="Back to top">↑</button>
+  </div>
+
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
